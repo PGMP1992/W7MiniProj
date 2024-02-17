@@ -13,12 +13,14 @@ namespace W7_MiniProject
             return s;
         }
 
+
         //  Show error message 
         public static void MsgInvalidEntry()
         {
-            MsgColor("Invalid Entry! Please try again: ", "Red");
+            MsgColor("Invalid Entry! Please try again: ", "r");
         }
 
+        
         // Color text in Prompt 
         public static void MsgColor(string msg, string color)
         {
@@ -44,9 +46,6 @@ namespace W7_MiniProject
             Console.ResetColor();
         }
 
-        public static bool DateCheck (DateTime date)
-        {
-            return false;
-        } 
+         
     }
 }
