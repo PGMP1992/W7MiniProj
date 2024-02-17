@@ -189,22 +189,24 @@ while (! exitProgram)
 
             //Sort List Sorted by Date =========================================
             List<Asset> sortByDate = listAssets.OrderBy(p => p.PurchaseDate).ToList();
+            
             MsgColor(" Press any key to show Assets sorted by Date", "b");
             Console.ReadLine();
+            
             MsgColor(" Assets Sorted by Date ", "y");
             ShowList(sortByDate);
 
             //Sort List Office and  Purchase =========================================
             List<Asset> sortByOffice = listAssets.OrderBy(p => p.Country + p.PurchaseDate).ToList();
+            
             MsgColor(" Press any key to show Assets sorted by Office and Purchase Date", "b");
             Console.ReadLine();
-            MsgColor(" Assets Sorted by Date ", "y");
+            
+            MsgColor(" Assets Sorted by Office and Purchase Date ", "y");
             ShowList(sortByOffice);
         }
         
-        //exit = false;
-        
-        while (! exitProgram)
+        while (!exitProgram || ! exit)
         {
             MsgColor("Would you like to enter more assets ? (Y/N)", "b");
             sImput = CheckString(Console.ReadLine());
@@ -216,8 +218,8 @@ while (! exitProgram)
             }
             else if (sImput == "N")
             {
-                exit = false;
                 exitProgram = true;
+                exit = true;
                 break;
             }
         }
