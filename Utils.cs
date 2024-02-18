@@ -3,6 +3,7 @@ namespace W7_MiniProject
 {
     internal class Utils
     {
+        
         public static string CheckString(string s)
         {
             s = s.Trim().ToUpper();
@@ -46,6 +47,6 @@ namespace W7_MiniProject
             Console.ResetColor();
         }
 
-         
-    }
-}
+    } //class 
+
+} //namespace

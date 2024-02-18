@@ -23,7 +23,6 @@ class Product : Currency
         Model = model; 
         Price = price;
         Country = country;
-        //Name = name;
         ShortName = shortname;
         DollarRate = dollarRate;
     }
@@ -33,6 +32,4 @@ class Product : Currency
     public string Brand { get; set; }
     public string Model { get; set; }
     public double Price { get; set; } 
-
-            // Methods
-    }
+}

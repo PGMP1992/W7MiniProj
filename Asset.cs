@@ -16,7 +16,6 @@ class Asset : Product // Child
         Price = price;
         PurchaseDate = purchaseDate;
         Country = country;
-        //Name = name;    
         ShortName = shortname;
         DollarRate = dollarRate;
 
@@ -29,6 +28,7 @@ class Asset : Product // Child
     public bool Less3months { get; set; }
     public double LocalPrice { get; set; }
 
+    
     // Methods
 
     // Initialise Properties
@@ -71,22 +71,24 @@ class Asset : Product // Child
     }
 
     
-    
+    // Iitialise Currency Properties
     public void SetLocalPrice() 
     { 
         if (Country == "SWEDEN" )
         {
             LocalPrice = Price * 10;
+            ShortName = "SEK";
         }
         if (Country == "SPAIN")
         {
             LocalPrice = Price * 1.10;
+            ShortName = "EUR";
         }
         if (Country == "USA")
         {
             LocalPrice = Price;
+            ShortName = "USD";
         }
     }
-    
 
 }
