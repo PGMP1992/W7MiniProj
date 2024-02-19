@@ -4,3 +4,6 @@ functionality of user data.
 Asset Tracking is a way to keep track of the company assets, like Laptops, Stationary computers, Phones and so
 on...
 All assets have an end of life which for simplicity reasons is 3 years.
+
+I added hard coded entries to help develop the program. 
+Hope that's not a problem. 
